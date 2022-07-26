@@ -16,7 +16,7 @@ suspend fun main() {
     JavaPluginMain.INSTANCE.load()
     JavaPluginMain.INSTANCE.enable()
 
-    val bot = BotFactory.newBot(123456, "") {
+    val bot = BotFactory.newBot(614392281, "521314wxw") {
         // 配置，例如：
         fileBasedDeviceInfo()
         protocol = BotConfiguration.MiraiProtocol.ANDROID_PAD

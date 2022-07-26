@@ -1,5 +1,7 @@
 # User-specific stuff
 .idea/
+test/
+!/src/**/config/
 
 *.iml
 *.ipr
@@ -104,7 +106,6 @@ $RECYCLE.BIN/
 build/
 device.json
 cache/
-config/
 
 # Ignore Gradle GUI config
 gradle-app.setting
