@@ -46,7 +46,7 @@ public final class JavaPluginMain extends JavaPlugin {
         }
         // 启动插件载入本地json
         try {
-            config = (Config) JsonConfigUtil.getConfigFromFile("HeroPower", Config.class);
+            config = (Config) JsonConfigUtil.getConfigFromFile("HiveSearch", Config.class);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
