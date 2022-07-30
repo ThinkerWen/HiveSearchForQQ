@@ -6,9 +6,17 @@ import net.mamoe.mirai.console.plugin.jvm.*
 import net.mamoe.mirai.event.GlobalEventChannel
 
 
+/**
+ * Copyright (c) 2022. Jason Wang (wxw126mail@126.com)
+ * Title: KotlinPluginMain
+ * Description: 插件入口类
+ *
+ * @author: 王晓文
+ * @date: 2022/7/30 19:00
+ */
 object KotlinPluginMain : KotlinPlugin(
 
-    JvmPluginDescriptionBuilder("cn.hive.plugin.mirai", "1.2.1")
+    JvmPluginDescriptionBuilder("cn.hive.plugin.HiveSearch", "1.2.2")
         .name("HiveSearch网课搜题")
         .info("网课答案搜索")
         .author("微信公众号：夜寒信息")
