@@ -1,7 +1,8 @@
 package app.hive.listener;
 
-import app.hive.config.ConfigKt;
+import app.hive.config.Config;
 import app.hive.utils.Constant;
+import kotlin.coroutines.CoroutineContext;
 import net.mamoe.mirai.contact.Group;
 import net.mamoe.mirai.event.EventHandler;
 import net.mamoe.mirai.event.SimpleListenerHost;
@@ -21,12 +22,12 @@ import java.io.IOException;
 public class SettingEventHolder extends SimpleListenerHost implements Constant {
 
     public static final SettingEventHolder INSTANCE = new SettingEventHolder();
-    private ConfigKt config = ConfigKt.INSTANCE;
+    private Config config = Config.INSTANCE;
 
-//    @Override
-//    public void handleException(@NotNull CoroutineContext context, @NotNull Throwable exception) {
-//        System.out.println("出现未捕获错误");
-//    }
+    @Override
+    public void handleException(@NotNull CoroutineContext context, @NotNull Throwable exception) {
+        System.out.println("出现未捕获错误");
+    }
 
     @EventHandler
     private void onSettings(@NotNull GroupMessageEvent event) throws IOException {

@@ -1,7 +1,7 @@
 package app.hive.service;
 
 
-import app.hive.config.ConfigKt;
+import app.hive.config.Config;
 import app.hive.listener.FriendListener;
 import app.hive.listener.GroupListener;
 import app.hive.listener.SettingEventHolder;
@@ -24,7 +24,7 @@ public class MiraiGlobal {
     private final GroupListener groupListener = GroupListener.INSTANCE;
     private final SettingEventHolder settingEventHolder = SettingEventHolder.INSTANCE;
     private final FriendListener friendListener = FriendListener.INSTANCE;
-    private ConfigKt config = ConfigKt.INSTANCE;
+    private Config config = Config.INSTANCE;
     public static final MiraiGlobal INSTANCE = new MiraiGlobal();
 
     public void listen(EventChannel<Event> eventChannel) {

@@ -9,7 +9,7 @@ import net.mamoe.mirai.console.data.*
  * @author: 王晓文
  * @date: 2022/7/30 14:30
  */
-public object ConfigKt : AutoSavePluginConfig("ConfigKt") {
+public object Config : AutoSavePluginConfig("HiveSearch") {
 
     @ValueName("enable")
     @ValueDescription("是否启用插件")
