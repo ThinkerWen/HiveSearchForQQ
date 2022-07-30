@@ -1,7 +1,7 @@
 package app.hive.service;
 
 
-import app.hive.config.Config;
+import app.hive.config.ConfigKt;
 import app.hive.listener.FriendListener;
 import app.hive.listener.GroupListener;
 import app.hive.listener.SettingEventHolder;
@@ -24,11 +24,11 @@ public class MiraiGlobal {
     private final GroupListener groupListener = GroupListener.INSTANCE;
     private final SettingEventHolder settingEventHolder = SettingEventHolder.INSTANCE;
     private final FriendListener friendListener = FriendListener.INSTANCE;
-    private final Config config = Config.INSTANCE;
+    private ConfigKt config = ConfigKt.INSTANCE;
     public static final MiraiGlobal INSTANCE = new MiraiGlobal();
 
     public void listen(EventChannel<Event> eventChannel) {
-        if (!config.isEnable()) return;
+        if (!config.getEnable()) return;
 
         eventChannel.filter(event ->
                         PermissionUtil.isGroupEnable(((GroupMessageEvent) event).getGroup().getId()) &&
@@ -36,7 +36,7 @@ public class MiraiGlobal {
                         .registerListenerHost(groupListener);
 
         eventChannel.filter(event ->
-                        (config.isAllHost() ||
+                        (config.getAllHost() ||
                         PermissionUtil.isHost(((GroupMessageEvent) event).getSender().getId())) &&
                         StringUtils.isNotBlank(((GroupMessageEvent) event).getMessage().contentToString()))
                         .registerListenerHost(settingEventHolder);

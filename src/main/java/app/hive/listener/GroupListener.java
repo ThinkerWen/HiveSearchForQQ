@@ -1,6 +1,6 @@
 package app.hive.listener;
 
-import app.hive.config.Config;
+import app.hive.config.ConfigKt;
 import app.hive.utils.Constant;
 import app.hive.utils.SearchUtil;
 import kotlin.coroutines.CoroutineContext;
@@ -22,7 +22,7 @@ import org.jetbrains.annotations.NotNull;
  */
 public class GroupListener extends SimpleListenerHost implements Constant {
 
-    private final Config config = Config.INSTANCE;
+    private ConfigKt config = ConfigKt.INSTANCE;
     public static final GroupListener INSTANCE = new GroupListener();
 
     @Override

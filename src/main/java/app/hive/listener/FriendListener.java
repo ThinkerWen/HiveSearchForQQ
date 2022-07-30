@@ -1,6 +1,5 @@
 package app.hive.listener;
 
-import app.hive.config.Config;
 import net.mamoe.mirai.event.Event;
 import net.mamoe.mirai.event.EventChannel;
 import net.mamoe.mirai.event.events.FriendMessageEvent;
@@ -14,7 +13,6 @@ import net.mamoe.mirai.event.events.FriendMessageEvent;
  */
 public class FriendListener {
 
-    private final Config config = Config.INSTANCE;
     public static final FriendListener INSTANCE = new FriendListener();
 
     private FriendListener() {}

@@ -6,4 +6,4 @@ pluginManagement {
         maven("https://dl.bintray.com/kotlin/kotlin-eap")
     }
 }
-rootProject.name = "HiveSearchFroQQ"
+rootProject.name = "HiveSearchForQQ"
