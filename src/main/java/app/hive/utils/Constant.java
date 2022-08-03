@@ -76,5 +76,5 @@ public interface Constant {
     /**
      * 单个答案的格式化规范
      */
-    String SINGLE_RESULT = "\n问题：\n%s\n\n选项：\n%s\n\n答案：%s\n\n出处：\n%s\n";
+    String SINGLE_RESULT = "\n ================\n问题：\n%s\n\n选项：\n%s\n\n答案：%s\n\n出处：\n%s\n";
 }

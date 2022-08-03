@@ -34,6 +34,7 @@ public class SearchUtil implements Constant{
         }
         if (jsonNode.get("code").asInt() != 0) return "";
         JsonNode resultList = jsonNode.get("result");
+        int resultCount = 0;
         for (JsonNode node : resultList) {
             String course = node.get("course").asText();
             String options = "无";
@@ -44,7 +45,8 @@ public class SearchUtil implements Constant{
             String reason = node.get("reason").asText();
             String resultSingle = String.format(SINGLE_RESULT, question, options, reason, course);
             result.append(resultSingle);
+            resultCount++;
         }
-        return result.toString();
+        return String.format("共匹配到%d组答案\n\n", resultCount) + result;
     }
 }
