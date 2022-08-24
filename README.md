@@ -9,6 +9,7 @@
 [![PackageVersion](https://img.shields.io/badge/mirai-2.10.1-blue)](https://github.com/mamoe/mirai)
 [![PackageVersion](https://img.shields.io/badge/suggestion-issue-blue)](https://github.com/Raptor-wxw/HiveSearchForQQ/issues)
 [![PackageVersion](https://img.shields.io/badge/download-release-blue)](https://github.com/Raptor-wxw/HiveSearchForQQ/releases)
+[![PackageVersion](https://img.shields.io/badge/Chat-MiraiForum-brightgreen)](https://mirai.mamoe.net/topic/1420/hivesearch-%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%BD%91%E8%AF%BE%E6%90%9C%E9%A2%98%E7%AD%94%E6%A1%88%E6%8F%92%E4%BB%B6-%E5%8F%AF%E7%94%A8)
 </div>
 
 ----
