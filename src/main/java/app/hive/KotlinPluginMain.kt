@@ -16,7 +16,7 @@ import net.mamoe.mirai.event.GlobalEventChannel
  */
 object KotlinPluginMain : KotlinPlugin(
 
-    JvmPluginDescriptionBuilder("cn.hive.plugin.HiveSearch", "1.2.2")
+    JvmPluginDescriptionBuilder("cn.hive.plugin.HiveSearch", "1.3.0")
         .name("HiveSearch网课搜题")
         .info("网课答案搜索")
         .author("微信公众号：夜寒信息")

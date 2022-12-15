@@ -45,6 +45,7 @@ public class GroupListener extends SimpleListenerHost implements Constant {
 
         if (message.charAt(0) == PREFIX) {
             String reason = SearchUtil.searchReason(message.substring(1), config.getToken());
+            if (reason == null) reason = "暂无结果，我们已经收到您的需求，请过段时间再次前来查询。";
             messageEvent.getGroup().sendMessage(new At(sender.getId()).plus(reason));
         }
     }
